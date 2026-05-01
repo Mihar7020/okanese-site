@@ -1,15 +1,15 @@
 import type { Metadata } from "next";
-import { Golos_Text } from "next/font/google";
+import { Anton } from "next/font/google";
 import type { ReactNode } from "react";
 import "./globals.css";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 
-const primaryFont = Golos_Text({
+const headingFont = Anton({
+  weight: "400",
   subsets: ["latin"],
-  variable: "--font-primary",
+  variable: "--font-heading",
   display: "swap",
-  weight: ["400", "500", "600", "700", "800", "900"],
 });
 
 export const metadata: Metadata = {
@@ -28,7 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={primaryFont.variable}>
+      <body className={headingFont.variable}>
         <a
           className="focus-ring sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-md focus:bg-white focus:px-4 focus:py-2 focus:text-sm focus:font-semibold"
           href="#main-content"

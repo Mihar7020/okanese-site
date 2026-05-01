@@ -7,7 +7,7 @@ export function SiteFooter() {
       <div className="container-pad grid gap-10 py-14 lg:grid-cols-[1.2fr_1fr_1fr]">
         <div>
           <div className="flex items-center gap-3">
-            <span className="flex h-14 w-14 items-center justify-center rounded-[10px] bg-white p-1">
+            <span className="flex h-14 w-14 items-center justify-center rounded-lg bg-white p-1">
               <img
                 alt="Okanese Learning Center logo"
                 className="h-full w-full object-contain"
@@ -16,20 +16,20 @@ export function SiteFooter() {
             </span>
             <div>
               <p className="font-display text-3xl">Okanese Learning Center</p>
-              <p className="text-xs font-black uppercase tracking-[0.12em] text-gold">
-                Family resources and school information
+              <p className="text-xs font-black uppercase tracking-[0.18em] text-gold">
+                School community website
               </p>
             </div>
           </div>
           <p className="mt-4 max-w-md text-sm leading-6 text-white/75">
-            Family communication, student support, school programs, and
-            community updates in one accessible place.
+            Clear family communication, student support, and community updates
+            in one warm school-focused place.
           </p>
           <p className="mt-4 text-sm text-white/70">
             Contact the office for attendance, transportation, family forms,
             and student support questions.
           </p>
-          <div className="mt-5 flex items-center gap-3 rounded-[10px] border border-sage/10 bg-white/5 p-3">
+          <div className="mt-5 flex items-center gap-3 rounded-lg border border-sage/10 bg-white/5 p-3">
             <img
               alt="Okanese First Nation logo"
               className="h-12 w-12 object-contain"

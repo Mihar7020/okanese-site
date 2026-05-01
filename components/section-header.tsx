@@ -16,16 +16,12 @@ export function SectionHeader({
   return (
     <div className="max-w-3xl">
       {eyebrow ? (
-        <p
-          className={`mb-4 text-xs font-bold uppercase tracking-[0.12em] ${
-            isLight ? "text-gold" : "text-forest-800"
-          }`}
-        >
+        <p className="mb-4 text-xs font-bold uppercase tracking-[0.22em] text-gold">
           {eyebrow}
         </p>
       ) : null}
       <h2
-        className={`font-display text-3xl sm:text-4xl ${
+        className={`font-display text-4xl sm:text-6xl ${
           isLight ? "text-white" : "text-charcoal"
         }`}
       >
@@ -34,7 +30,7 @@ export function SectionHeader({
       {description ? (
         <p
           className={`mt-5 text-base leading-7 sm:text-lg ${
-            isLight ? "text-white/78" : "text-graphite"
+            isLight ? "text-white/72" : "text-charcoal/70"
           }`}
         >
           {description}
