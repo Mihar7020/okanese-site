@@ -20,20 +20,22 @@ export default function NewsAnnouncementsPage() {
         description="News should tell families what changed, who it affects, and what to do next without making them search."
         image="/images/okanese-landscape-road.jpg"
       />
-      <section className="container-pad py-14 sm:py-20">
-        <Reveal>
-          <SectionHeader
-            title="Latest announcements"
-            description="Announcements are grouped for families, operations, classroom updates, and community events so important details are easier to scan."
-          />
-        </Reveal>
-        <Stagger className="mt-8 grid gap-5 md:grid-cols-3">
-          {announcements.map((item) => (
-            <StaggerItem key={item.title}>
-              <AnnouncementCard item={item} />
-            </StaggerItem>
-          ))}
-        </Stagger>
+      <section className="soft-section">
+        <div className="container-pad py-14 sm:py-20">
+          <Reveal>
+            <SectionHeader
+              title="Latest announcements"
+              description="Announcements are grouped for families, operations, classroom updates, and community events so important details are easier to scan."
+            />
+          </Reveal>
+          <Stagger className="mt-10 grid gap-7 md:grid-cols-3">
+            {announcements.map((item) => (
+              <StaggerItem className="even:md:translate-y-8" key={item.title}>
+                <AnnouncementCard item={item} />
+              </StaggerItem>
+            ))}
+          </Stagger>
+        </div>
       </section>
     </>
   );

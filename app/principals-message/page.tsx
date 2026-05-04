@@ -17,12 +17,13 @@ export default function PrincipalsMessagePage() {
         description="A message that should sound like it belongs to this school community, with real priorities and a clear invitation to families."
         image="/images/okanese-school-front.jpg"
       />
-      <section className="container-pad py-14 sm:py-20">
-        <Reveal>
-          <article className="mx-auto grid max-w-5xl overflow-hidden rounded-3xl border border-forest-900/10 bg-white shadow-lift lg:grid-cols-[0.78fr_1.22fr]">
+      <section className="soft-section">
+        <div className="container-pad py-14 sm:py-20">
+          <Reveal>
+            <article className="hand-card mx-auto grid max-w-5xl overflow-hidden border border-forest-900/10 bg-cream shadow-lift lg:grid-cols-[0.78fr_1.22fr]">
             <img
               alt="School welcome portrait"
-              className="h-full min-h-80 w-full bg-earth-50 object-contain p-8"
+              className="h-full min-h-80 w-full bg-gold/12 object-contain p-8"
               src="/images/okanese-learning-center-logo.png"
             />
             <div className="p-6 sm:p-10">
@@ -55,8 +56,9 @@ export default function PrincipalsMessagePage() {
                 Principal, Okanese Learning Center
               </p>
             </div>
-          </article>
-        </Reveal>
+            </article>
+          </Reveal>
+        </div>
       </section>
     </>
   );

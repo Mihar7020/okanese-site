@@ -18,7 +18,8 @@ export default function AboutPage() {
         description="A community school presence shaped around family communication, classroom routines, and respectful local content."
         image="/images/okanese-valley.jpg"
       />
-      <section className="container-pad grid gap-10 py-14 sm:py-20 lg:grid-cols-[0.85fr_1.15fr]">
+      <section className="soft-section">
+        <div className="container-pad grid gap-10 py-14 sm:py-20 lg:grid-cols-[0.85fr_1.15fr]">
         <Reveal>
           <SectionHeader
             eyebrow="School profile"
@@ -33,14 +34,15 @@ export default function AboutPage() {
             "Community connection should come from local school voice, not imported graphics or borrowed symbols.",
           ].map((text) => (
             <StaggerItem key={text}>
-              <p className="rounded-2xl border border-forest-900/10 bg-white p-6 leading-7 text-forest-900/75 shadow-sm">
+              <p className="hand-card border border-forest-900/10 bg-cream p-6 leading-7 text-forest-900/75">
                 {text}
               </p>
             </StaggerItem>
           ))}
         </Stagger>
+        </div>
       </section>
-      <section className="bg-white">
+      <section className="soft-section">
         <div className="container-pad grid gap-8 py-14 sm:py-20 lg:grid-cols-3">
           {[
             {
@@ -56,7 +58,7 @@ export default function AboutPage() {
               body: "The site keeps everyday information clear, warm, and practical so families know the next step without searching.",
             },
           ].map((item) => (
-            <Reveal className="rounded-2xl bg-earth-50 p-6 shadow-sm" key={item.title}>
+            <Reveal className="hand-card border border-charcoal/10 bg-cream p-6 shadow-soft" key={item.title}>
               <h2 className="text-xl font-black text-forest-900">{item.title}</h2>
               <p className="mt-3 text-sm leading-6 text-forest-900/70">
                 {item.body}

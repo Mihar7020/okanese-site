@@ -1,0 +1,8 @@
+⨯ Another next dev server is already running.
+
+- Local:        http://localhost:3000
+- PID:          56844
+- Dir:          C:\Users\MiharKathiriya\Downloads\OLC Work - brutal Saas THEME
+- Log:          .next\dev\logs\next-development.log
+
+Run taskkill /PID 56844 /F to stop it.

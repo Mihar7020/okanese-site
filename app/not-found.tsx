@@ -2,8 +2,9 @@ import Link from "next/link";
 
 export default function NotFound() {
   return (
-    <section className="container-pad py-20">
-      <p className="text-sm font-bold uppercase tracking-[0.18em] text-harvest-500">
+    <section className="soft-section py-20">
+      <div className="container-pad">
+      <p className="inline-flex rotate-[-1deg] rounded-full bg-gold px-4 py-2 text-sm font-black uppercase tracking-[0.16em] text-forest-900 shadow-sm">
         Page not found
       </p>
       <h1 className="mt-4 text-4xl font-black text-forest-900">
@@ -14,11 +15,12 @@ export default function NotFound() {
         the homepage or contact the school office.
       </p>
       <Link
-        className="focus-ring mt-8 inline-flex rounded-md bg-forest-800 px-5 py-3 text-sm font-black text-white"
+        className="focus-ring mt-8 inline-flex rounded-full bg-forest-800 px-5 py-3 text-sm font-black text-cream"
         href="/"
       >
         Return home
       </Link>
+      </div>
     </section>
   );
 }

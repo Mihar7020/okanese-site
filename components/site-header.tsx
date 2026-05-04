@@ -11,14 +11,21 @@ export function SiteHeader() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 z-40 w-full border-b border-charcoal/10 bg-white/90 backdrop-blur-xl">
+    <header className="fixed top-0 z-40 w-full border-b border-charcoal/10 bg-cream/88 backdrop-blur-xl">
       <div className="container-pad flex min-h-20 items-center justify-between gap-4">
         <Link
-          className="focus-ring rounded-md font-display text-3xl text-charcoal"
+          className="focus-ring flex items-center gap-3 rounded-full pr-3 font-display text-2xl text-charcoal sm:text-3xl"
           href="/"
           aria-label="Okanese Learning Center home"
         >
-          Okanese<span className="text-gold">.</span>
+          <span className="flex h-12 w-12 items-center justify-center rounded-organic bg-white p-1.5 shadow-soft">
+            <img
+              alt=""
+              className="h-full w-full object-contain"
+              src="/images/okanese-learning-center-logo.png"
+            />
+          </span>
+          Okanese<span className="text-clay">.</span>
         </Link>
 
         <nav className="hidden items-center gap-1 lg:flex" aria-label="Primary navigation">
@@ -28,8 +35,8 @@ export function SiteHeader() {
               <Link
                 className={`focus-ring rounded-md px-3 py-2 text-sm font-bold transition ${
                   active
-                    ? "bg-charcoal text-white shadow-sm"
-                    : "text-charcoal/72 hover:bg-charcoal/5 hover:text-charcoal"
+                    ? "bg-charcoal text-cream shadow-sm"
+                    : "text-charcoal/72 hover:bg-gold/25 hover:text-charcoal"
                 }`}
                 href={item.href}
                 key={item.href}
@@ -48,7 +55,7 @@ export function SiteHeader() {
             Calendar
           </Link>
           <Link
-            className="focus-ring rounded-full bg-charcoal px-6 py-3 text-sm font-bold text-white transition hover:-translate-y-0.5 hover:shadow-lift"
+            className="focus-ring rounded-full bg-charcoal px-6 py-3 text-sm font-bold text-cream transition hover:-translate-y-0.5 hover:bg-sage hover:shadow-lift"
             href="/contact"
           >
             Contact Office
@@ -59,7 +66,7 @@ export function SiteHeader() {
           aria-controls="mobile-navigation"
           aria-expanded={isOpen}
           aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"}
-          className="focus-ring rounded-full border border-charcoal/15 bg-white px-4 py-2 text-sm font-black text-charcoal shadow-sm transition hover:-translate-y-0.5 lg:hidden"
+          className="focus-ring rounded-full border border-charcoal/15 bg-cream px-4 py-2 text-sm font-black text-charcoal shadow-sm transition hover:-translate-y-0.5 lg:hidden"
           onClick={() => setIsOpen((open) => !open)}
           type="button"
         >
@@ -84,8 +91,8 @@ export function SiteHeader() {
                 <Link
                   className={`focus-ring rounded-md px-3 py-3 text-sm font-bold shadow-sm ${
                     active
-                      ? "bg-charcoal text-white"
-                      : "bg-white text-charcoal"
+                      ? "bg-charcoal text-cream"
+                      : "bg-cream text-charcoal"
                   }`}
                   href={item.href}
                   key={item.href}

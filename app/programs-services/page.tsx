@@ -20,22 +20,24 @@ export default function ProgramsServicesPage() {
         description="Families can understand what support exists, who to contact, and how each service fits into the school day."
         image="/images/okanese-campus-close.jpg"
       />
-      <section className="container-pad py-14 sm:py-20">
-        <Reveal>
-          <SectionHeader
-            title="Program areas"
-            description="Program areas are grouped around the student experience: classroom learning, language and culture, wellness, nutrition, transportation, and family communication."
-          />
-        </Reveal>
-        <Stagger className="mt-8 grid gap-5 md:grid-cols-2">
-          {programs.map((item) => (
-            <StaggerItem key={item.title}>
-              <ProgramCard item={item} />
-            </StaggerItem>
-          ))}
-        </Stagger>
+      <section className="soft-section">
+        <div className="container-pad py-14 sm:py-20">
+          <Reveal>
+            <SectionHeader
+              title="Program areas"
+              description="Program areas are grouped around the student experience: classroom learning, language and culture, wellness, nutrition, transportation, and family communication."
+            />
+          </Reveal>
+          <Stagger className="mt-10 grid gap-7 md:grid-cols-2">
+            {programs.map((item) => (
+              <StaggerItem className="even:md:translate-y-8" key={item.title}>
+                <ProgramCard item={item} />
+              </StaggerItem>
+            ))}
+          </Stagger>
+        </div>
       </section>
-      <section className="bg-white">
+      <section className="green-glow text-cream">
         <div className="container-pad grid gap-6 py-14 sm:py-20 lg:grid-cols-3">
           {[
             {
@@ -51,9 +53,9 @@ export default function ProgramsServicesPage() {
               body: "Language, culture, land, and community knowledge are approached with care and shared through appropriate school guidance.",
             },
           ].map((item) => (
-            <Reveal className="rounded-2xl border border-forest-900/10 bg-earth-50 p-6" key={item.title}>
-              <h2 className="text-xl font-black text-forest-900">{item.title}</h2>
-              <p className="mt-3 text-sm leading-6 text-forest-900/70">
+            <Reveal className="hand-card border border-cream/10 bg-cream/8 p-6" key={item.title}>
+              <h2 className="text-xl font-black text-gold">{item.title}</h2>
+              <p className="mt-3 text-sm leading-6 text-cream/74">
                 {item.body}
               </p>
             </Reveal>
